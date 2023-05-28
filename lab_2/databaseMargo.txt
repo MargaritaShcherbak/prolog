@@ -1,0 +1,59 @@
+clauses
+	employee(1, "Krylov Maxim Ivanovich", male, date(1970, 1, 21), date(2005, 1, 1)).
+	employee(2, "Dolganov Nikolay Vladimirovich", male, date(1985, 12, 2), date(2023, 5, 11)).
+	employee(3, "Egorova Elena Ivanovna", female, date(1980, 3, 13), date(2012, 10, 1)).
+	employee(4, "Ivanov Dmitry Dmitrievich", male, date(1990, 6, 15), date(2015, 9, 15)).
+	employee(5, "Shatokhina Alisa Viktorovna", female, date(2000, 3, 12), date(2022, 11, 18)).
+	employee(6, "Makhorin Gleb Petrovich", male, date(1995, 12, 28), date(2023, 4, 23)).
+	employee(7, "Kashkina Anastasia Sergeevna", female, date(1985, 8, 23), date(2010, 6, 19)).
+	employee(8, "Valov Dmitry Andreevich", male, date(1965, 10, 30), date(2000, 1, 1)).
+	employee(9, "Nechaeva Polina Romanovna", female, date(1999, 12, 12), date(2023, 5, 6)).
+	employee(10, "Sokolov Alexey Petrovich", male, date(1987, 7, 5), date(2011, 9, 3)).
+
+	department(1,"Legal Support Department").
+	department(2,"Analytics Department").
+	department(3,"IT Infrastructure Department").
+	department(4, "Quality Department").
+	department(5, "Design Department").
+	department(6, "Marketing Department").
+
+	position(1, "boss", "Legal support of the company's business", 1).
+	position(2, "employee", "Legal support of the company's business", 1).
+	position(3, "boss","Evaluation the quality of the services provided and the execution of orders", 4).
+	position(4, "boss", "Data analysis and statistical model development", 2).
+	position(5, "employee", "Data analysis and statistical model development", 2).
+	position(6, "employee", "Data analysis and statistical model development", 2).
+	position(7, "boss", "Otvichaet za rabotu otdela razrabotki", 3).
+	position(8, "employee", "Maintenance and support of the company's IT systems", 3).
+	position(9, "boss", "User interface design development", 5).
+	position(10, "boss", "Promotion of the company's products on the market", 6).
+
+	submission(1,2).
+	submission(2,3).
+	submission(3,4).
+	submission(3,5).
+	submission(4,5).
+	submission(5,6).
+
+	works(1, 5, date(2005, 1, 1)).
+	works(2, 7, date(2023, 5, 11)).
+	works(3, 3, date(2012, 10, 1)).
+	works(4, 2, date(2015, 9, 15)).
+	works(5, 8, date(2022, 11, 18)).
+	works(6, 6, date(2023, 4, 23)).
+	works(7, 4, date(2010, 6, 19)).
+	works(8, 1,  date(2000, 1, 1)).
+	works(9, 9,  date(2023, 5, 6)).
+	works(10, 10,  date(2011, 9, 3)).
+	
+	salary(1, 670000).
+	salary(2, 90000).
+	salary(3, 345000).
+	salary(4, 76000).
+	salary(5, 79000).
+	salary(6, 23000).
+	salary(7, 12000).
+	salary(8, 89800).
+	salary(9, 46000).
+	salary(10, 32000).
+	
