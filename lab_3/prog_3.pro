@@ -132,7 +132,7 @@ clauses
         position(PositionId, _, _, DepartmentId),
         salary(EmployeeId, X),
         s(Amount),
-        assert(s(Amount + X)), %результат сохраняется в переменную Sum
+        assert(s(Amount + X)), %результат сохраняется в переменную Amount
         fail.
     department_sal(Name) :-
         department(_, Name),
